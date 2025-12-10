@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Implementation Notes – Neri Carcasci Portfolio</title>
+    <meta name="description" content="Implementation notes for Neri Carcasci's Bootstrap portfolio website, including Bootstrap components, dynamic features, and hosting details.">
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    >
+
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    >
+
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand fw-semibold" href="index.html">
+          <i class="bi bi-person-badge me-1"></i>
+          Neri Carcasci
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navImpl" aria-controls="navImpl" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navImpl">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#hero">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="implementation-notes.html">Implementation notes</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="section-padding">
+      <div class="container">
+        <!-- Header -->
+        <div class="row mb-4">
+          <div class="col-lg-10 mx-auto text-center">
+            <h1 class="section-title">Implementation Notes</h1>
+            <p class="section-subtitle">
+              Overview of Bootstrap components, built-in behaviours, custom JavaScript and hosting
+              used in the Interactive Portfolio Website.
+            </p>
+          </div>
+        </div>
+
+        <div class="row mb-4">
+          <div class="col-lg-10 mx-auto">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <p class="mb-2">
+                  The portfolio is a single-page site built on Bootstrap 5.3.3 with a custom green theme.
+                  This page focuses on:
+                </p>
+                <ul class="small mb-2">
+                  <li>Bootstrap features used, including components and built-in behaviours.</li>
+                  <li>Custom JavaScript features that add interactivity beyond Bootstrap.</li>
+                  <li>Hosting details.</li>
+                </ul>
+                <p class="mb-0 small text-muted">
+                  Main file: <code>index.html</code> · Custom styles: <code>css/style.css</code> ·
+                  Custom scripts: <code>js/scripts.js</code>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="card shadow-sm h-100">
+              <div class="card-body">
+                <h2 class="h5 mb-3">1. Bootstrap components and features used</h2>
+                <p class="small mb-3">
+                  This section lists Bootstrap features that provide layout, components and behaviour
+                  without custom implementation.
+                </p>
+
+                <h3 class="h6 mt-3">1.1 Layout and structure</h3>
+                <ul class="small ps-3">
+                  <li>
+                    <strong>Grid system and containers</strong>: 
+                    <code>.container</code>, <code>.row</code>, <code>.col-*</code>,
+                    and responsive classes such as <code>.col-lg-5</code> and
+                    <code>.row-cols-1 row-cols-md-3</code> control the layout in the hero,
+                    about, education, projects, experience, skills, hobbies and contact sections.
+                    <br>
+                    Docs:
+                    <a href="https://getbootstrap.com/docs/5.3/layout/containers/" target="_blank" rel="noopener">Containers</a>,
+                    <a href="https://getbootstrap.com/docs/5.3/layout/grid/" target="_blank" rel="noopener">Grid</a>
+                  </li>
+                  <li>
+                    <strong>Utility classes</strong>: 
+                    spacing classes such as <code>.mb-4</code> and <code>.pt-4</code>,
+                    flex utilities such as <code>.d-flex</code>,
+                    <code>.justify-content-between</code>, <code>.align-items-center</code>,
+                    text utilities and color helpers are used for alignment and spacing.
+                    <br>
+                    Docs:
+                    <a href="https://getbootstrap.com/docs/5.3/utilities/flex/" target="_blank" rel="noopener">Flex utilities</a>,
+                    <a href="https://getbootstrap.com/docs/5.3/utilities/spacing/" target="_blank" rel="noopener">Spacing</a>,
+                    <a href="https://getbootstrap.com/docs/5.3/utilities/text/" target="_blank" rel="noopener">Text</a>
+                  </li>
+                  <li>
+                    <strong>Responsive images</strong>: 
+                    classes such as <code>.img-fluid</code>, <code>.d-block</code>,
+                    <code>.w-100</code> and <code>.rounded-3</code> are used in the hero portrait
+                    and hobbies gallery to keep images responsive and well framed.
+                    <br>
+                    Docs:
+                    <a href="https://getbootstrap.com/docs/5.3/content/images/" target="_blank" rel="noopener">Images</a>
+                  </li>
+                </ul>
+
+
+                <h3 class="h6 mt-3">1.2 Navigation and page behaviour</h3>
+                <ul class="small ps-3">
+                  <li>
+                    <strong>Navbar</strong>: 
+                    the top navigation uses <code>.navbar</code>, <code>.navbar-expand-lg</code>,
+                    <code>.navbar-dark</code> and <code>.bg-dark</code> with a brand and section links.
+                    It collapses into a hamburger menu on smaller screens.
+                    <br>
+                    Used at the top of <a href="index.html#hero">index.html</a>.
+                    <br>
+                    Docs:
+                    <a href="https://getbootstrap.com/docs/5.3/components/navbar/" target="_blank" rel="noopener">Navbar</a>
+                  </li>
+                  <li>
+                    <strong>Collapse</strong>: 
+                    the mobile menu uses Collapse via
+                    <code>data-bs-toggle="collapse"</code> and <code>data-bs-target="#navbarContent"</code>.
+                    Bootstrap handles show and hide behaviour.
+                    <br>
+                    Docs:
+                    <a href="https://getbootstrap.com/docs/5.3/components/collapse/" target="_blank" rel="noopener">Collapse</a>
+                  </li>
+                  <li>
+                    <strong>Scrollspy</strong>: 
+                    enabled on <code>&lt;body&gt;</code> with
+                    <code>data-bs-spy="scroll"</code> and <code>data-bs-target="#mainNav"</code>.
+                    Bootstrap updates the active navbar link based on the scroll position.
+                    <br>
+                    Docs:
+                    <a href="https://getbootstrap.com/docs/5.3/components/scrollspy/" target="_blank" rel="noopener">Scrollspy</a>
+                  </li>
+                </ul>
+
+                <h3 class="h6 mt-3">1.3 Content and data display</h3>
+                <ul class="small ps-3">
+                  <li>
+                    <strong>Card</strong>: 
+                    used in multiple sections, including About (quick facts),
+                    Projects, Experience, Skills, Achievements, Hobbies and Contact,
+                    to group related content.
+                    <br>
+                    Docs:
+                    <a href="https://getbootstrap.com/docs/5.3/components/card/" target="_blank" rel="noopener">Card</a>
+                  </li>
+                  <li>
+                    <strong>List group</strong>: 
+                    used to present quick facts in About and contact items in the Quick Contact modal.
+                    <br>
+                    Docs:
+                    <a href="https://getbootstrap.com/docs/5.3/components/list-group/" target="_blank" rel="noopener">List group</a>
+                  </li>
+                  <li>
+                    <strong>Table</strong>: 
+                    the Education section uses <code>.table</code>, <code>.table-striped</code>,
+                    <code>.table-hover</code>, <code>.align-middle</code> and
+                    <code>.table-responsive</code> to display modules, semester, type and grade.
+                    <br>
+                    Docs:
+                    <a href="https://getbootstrap.com/docs/5.3/content/tables/" target="_blank" rel="noopener">Tables</a>
+                  </li>
+                  <li>
+                    <strong>Badge</strong>: 
+                    Bootstrap badges are used with custom colors to label skills, project categories
+                    and achievements, for example in About, Projects and Achievements.
+                    <br>
+                    Docs:
+                    <a href="https://getbootstrap.com/docs/5.3/components/badge/" target="_blank" rel="noopener">Badges</a>
+                  </li>
+                </ul>
+
+                <h3 class="h6 mt-3">1.4 Navs, tabs, pills and accordion</h3>
+                <ul class="small ps-3">
+                  <li>
+                    <strong>Navs and tabs</strong>: 
+                    the Education section uses <code>.nav</code>, <code>.nav-tabs</code> and
+                    <code>data-bs-toggle="tab"</code> to switch between Year 1, 2, 3 and 4.
+                    Tab behaviour is provided by Bootstrap's JavaScript.
+                    <br>
+                    Docs:
+                    <a href="https://getbootstrap.com/docs/5.3/components/navs-tabs/" target="_blank" rel="noopener">Navs and tabs</a>
+                  </li>
+                  <li>
+                    <strong>Nav pills</strong>: 
+                    the Skills section uses <code>.nav-pills</code> to switch between Technical skills
+                    and Soft skills.
+                    <br>
+                    Docs:
+                    <a href="https://getbootstrap.com/docs/5.3/components/navs-tabs/#pills" target="_blank" rel="noopener">Nav pills</a>
+                  </li>
+                  <li>
+                    <strong>Accordion</strong>: 
+                    the Experience section is a Bootstrap accordion built from
+                    <code>.accordion</code>, <code>.accordion-item</code>,
+                    <code>.accordion-button</code> and <code>.accordion-collapse</code>.
+                    Opening and closing is handled by Bootstrap.
+                    <br>
+                    Docs:
+                    <a href="https://getbootstrap.com/docs/5.3/components/accordion/" target="_blank" rel="noopener">Accordion</a>
+                  </li>
+                  <li>
+                    <strong>Dropdown</strong>: 
+                    the project filter in the Projects section uses a Bootstrap dropdown with
+                    <code>.dropdown</code>, <code>.dropdown-toggle</code>, <code>.dropdown-menu</code>
+                    and <code>.dropdown-item</code>. Bootstrap handles menu positioning and toggling.
+                    <br>
+                    Docs:
+                    <a href="https://getbootstrap.com/docs/5.3/components/dropdowns/" target="_blank" rel="noopener">Dropdowns</a>
+                  </li>
+                </ul>
+
+                <h3 class="h6 mt-3">1.5 Overlays and feedback</h3>
+                <ul class="small ps-3">
+                  <li>
+                    <strong>Modal</strong>: 
+                    used in several places:
+                    <ul class="mb-1">
+                      <li>Project detail modals in the Projects section.</li>
+                      <li>Email draft modal in the Contact section.</li>
+                      <li>Quick Contact modal at the bottom of the page.</li>
+                      <li>Gallery modal in the Hobbies section.</li>
+                    </ul>
+                    Markup follows the Bootstrap modal pattern with
+                    <code>data-bs-toggle="modal"</code> and <code>data-bs-target</code>.
+                    Opening, closing and focus management come from Bootstrap.
+                    <br>
+                    Docs:
+                    <a href="https://getbootstrap.com/docs/5.3/components/modal/" target="_blank" rel="noopener">Modal</a>
+                  </li>
+                  <li>
+                    <strong>Carousel</strong>: 
+                    the Hobbies section uses a Bootstrap carousel for featured photos,
+                    with <code>.carousel</code>, <code>.carousel-inner</code>,
+                    <code>.carousel-item</code> and previous or next controls.
+                    Sliding behaviour is built in.
+                    <br>
+                    Docs:
+                    <a href="https://getbootstrap.com/docs/5.3/components/carousel/" target="_blank" rel="noopener">Carousel</a>
+                  </li>
+                  <li>
+                    <strong>Toast</strong>: 
+                    a toast appears when the user submits the email form.
+                    It uses <code>.toast</code> with a close button and is shown programmatically.
+                    <br>
+                    Docs:
+                    <a href="https://getbootstrap.com/docs/5.3/components/toasts/" target="_blank" rel="noopener">Toasts</a>
+                  </li>
+                  <li>
+                    <strong>Close button</strong>: 
+                    <code>.btn-close</code> is used in modals and on the toast for consistent
+                    accessible close icons.
+                    <br>
+                    Docs:
+                    <a href="https://getbootstrap.com/docs/5.3/components/close-button/" target="_blank" rel="noopener">Close button</a>
+                  </li>
+                </ul>
+
+                <h3 class="h6 mt-3">1.6 Forms, buttons and icons</h3>
+                <ul class="small ps-3">
+                  <li>
+                    <strong>Forms</strong>: 
+                    the email form inside the Contact modal uses Bootstrap form markup, including
+                    <code>.form-label</code>, <code>.form-control</code>,
+                    <code>.invalid-feedback</code> and works with Bootstrap validation states
+                    (via <code>.was-validated</code> added in JavaScript).
+                    <br>
+                    Docs:
+                    <a href="https://getbootstrap.com/docs/5.3/forms/overview/" target="_blank" rel="noopener">Forms</a>
+                  </li>
+                  <li>
+                    <strong>Buttons</strong>: 
+                    the site uses <code>.btn</code>, <code>.btn-primary</code>,
+                    <code>.btn-outline-secondary</code>, <code>.btn-sm</code>,
+                    <code>.btn-lg</code> and full width buttons such as
+                    <code>.btn w-100</code> in the Contact section.
+                    <br>
+                    Docs:
+                    <a href="https://getbootstrap.com/docs/5.3/components/buttons/" target="_blank" rel="noopener">Buttons</a>
+                  </li>
+                  <li>
+                    <strong>Bootstrap Icons</strong>: 
+                    icons for LinkedIn, GitHub, email and navigation come from the
+                    Bootstrap Icons library loaded from the CDN.
+                    <br>
+                    Docs:
+                    <a href="https://icons.getbootstrap.com/" target="_blank" rel="noopener">Bootstrap Icons</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="card shadow-sm h-100">
+              <div class="card-body d-flex flex-column">
+                <h2 class="h5 mb-3">2. Custom dynamic JavaScript features</h2>
+                <p class="small">
+                  The following behaviours are implemented in <code>js/scripts.js</code> and build on top
+                  of Bootstrap components.
+                </p>
+
+                <ul class="small ps-3 mb-3">
+                  <li>
+                    <strong>Scrollspy initialisation</strong>: 
+                    the script explicitly initialises <code>bootstrap.ScrollSpy</code> on
+                    <code>document.body</code> with <code>target: "#mainNav"</code> to ensure
+                    consistent behaviour when scrolling through sections.
+                  </li>
+                  <li>
+                    <strong>Project filtering</strong>: 
+                    the Bootstrap dropdown in the Projects section is the control, but the filtering logic
+                    is custom. When a dropdown item is clicked, JavaScript:
+                    <ul class="mb-1">
+                      <li>Reads the selected filter from <code>data-filter</code>.</li>
+                      <li>Shows or hides project cards based on their <code>data-category</code> attribute.</li>
+                      <li>Updates the label on the dropdown toggle button.</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>Email draft and toast</strong>: 
+                    in the Contact section, the email form:
+                    <ul class="mb-1">
+                      <li>Uses client side validation to check required fields and email format.</li>
+                      <li>Builds a <code>mailto:</code> link using name, subject and message from the form.</li>
+                      <li>Shows a Bootstrap toast with the message that the mail app is opening.</li>
+                      <li>Triggers the default mail application using <code>window.location.href</code>.</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>Gallery modal image swapping</strong>: 
+                    all thumbnails in the Hobbies gallery open the same Bootstrap modal.
+                    JavaScript listens for clicks on elements with the class <code>.gallery-image</code>,
+                    reads the <code>src</code> and <code>alt</code>, and updates
+                    <code>#galleryModalImage</code> so the correct photo appears in the modal.
+                  </li>
+                  <li>
+                    <strong>Dynamic year in the footer</strong>: 
+                    the current year is inserted into the footer span with id <code>year</code> on
+                    the main page and <code>impl-year</code> on this page using JavaScript.
+                  </li>
+                </ul>
+
+                <h2 class="h5 mt-3 mb-2">3. Hosting details</h2>
+                <p class="small mb-1">
+                  The portfolio website is hosted at:
+                </p>
+                <p class="small">
+                  <strong>URL</strong>:
+                  <a href="https://nericarcasci.github.io/InteractiveMediaCA2/" target="_blank" rel="noopener">
+                    https://nericarcasci.github.io/InteractiveMediaCA2/
+                  </a>
+                </p>
+              
+
+                <div class="mt-4">
+                  <a href="index.html#hero" class="btn btn-primary btn-sm">
+                    <i class="bi bi-arrow-left me-1"></i>
+                    Back to portfolio
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+    <footer class="py-3 bg-dark text-light mt-3">
+      <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <p class="mb-0 small">
+          &copy; <span id="impl-year"></span> Neri Carcasci. Implementation notes.
+        </p>
+        <a href="index.html" class="small text-decoration-none text-light">
+          <i class="bi bi-house-door me-1"></i>
+          Return to main site
+        </a>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      (function () {
+        var span = document.getElementById('impl-year');
+        if (span) {
+          span.textContent = new Date().getFullYear();
+        }
+      })();
+    </script>
+  </body>
+</html>

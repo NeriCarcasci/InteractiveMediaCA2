@@ -1,0 +1,1260 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Neri Carcasci – Interactive Portfolio</title>
+    <meta name="description" content="Portfolio website for Neri Carcasci, showcasing education, projects, work experience, and skills.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="80" tabindex="0">
+    <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm ">
+      <div class="container"><a class="navbar-brand fw-semibold" href="#hero"><span class="me-2"><i class="bi bi-person-badge"></i></span> Neri Carcasci </a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
+            <li class="nav-item"><a class="nav-link" href="#hobbies">Hobbies</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav><a href="implementation-notes.html" class="grading-ribbon" aria-label="View Bootstrap components and grading notes"><span>Grading</span></a>
+    <main class="mt-5 pt-4">
+      <!-- HERO SECTION -->
+      <section id="hero" class="hero-section d-flex align-items-center">
+        <div class="container">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-7 text-center text-lg-start">
+              <span class="badge bg-primary-subtle text-primary mb-3 px-3 py-2"> Computing • ML & AI • Cybersecurity </span>
+              <h1 class="display-5 fw-bold mb-3"> Hi, I’m <span class="text-primary">Neri Carcasci</span>
+              </h1>
+              <p class="lead mb-4"> Passionate Computing Science student with expertise in Machine Learning, Cybersecurity, and Software Development. I enjoy building trustworthy, production-ready systems that solve real problems. </p>
+              <div class="d-flex flex-column flex-sm-row gap-2 justify-content-center justify-content-lg-start mb-3">
+                <a href="#contact" class="btn btn-primary btn-lg">
+                  <i class="bi bi-envelope-fill me-2"></i>Contact Me </a>
+                <a href="NeriCarcasci - cv.pdf" class="btn btn-outline-secondary btn-lg" target="_blank" rel="noopener">
+                  <i class="bi bi-file-earmark-person me-2"></i>Download CV </a>
+              </div>
+              <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start small text-muted">
+                <span class="d-inline-flex align-items-center">
+                  <i class="bi bi-geo-alt me-1"></i>Dublin 16, Ireland </span>
+                <span class="d-inline-flex align-items-center">
+                  <i class="bi bi-mortarboard me-1"></i>BSc (Hons) Computing with ML &amp; AI || GPA 3.7 </span>
+                <span class="d-inline-flex align-items-center hero-icon">
+                  <a href="https://linkedin.com/in/neri-carcasci" target="_blank" rel="noopener" class="social-icon-link" aria-label="Neri Carcasci on LinkedIn">
+                    <i class="bi bi-linkedin fs-5"></i>
+                  </a>
+                </span>
+                <span class="d-inline-flex align-items-center hero-icon">
+                  <a href="https://github.com/NeriCarcasci" target="_blank" rel="noopener" class="social-icon-link" aria-label="Neri Carcasci on GitHub">
+                    <i class="bi bi-github fs-5"></i>
+                  </a>
+                </span>
+              </div>
+            </div>
+            <div class="col-lg-5 text-center">
+              <div class="hero-photo-wrapper mx-auto shadow-sm">
+                <div class="hero-photo-frame">
+                  <img src="images/profile-neri.jpg" class="img-fluid hero-photo" alt="Portrait of Neri Carcasci">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ABOUT ME -->
+      <section id="about" class="section-padding bg-body-secondary">
+        <div class="container">
+          <div class="row mb-4">
+            <div class="col text-center">
+              <h2 class="section-title">About Me</h2>
+              <p class="section-subtitle">A brief overview of my background and interests.</p>
+            </div>
+          </div>
+          <div class="row g-4 align-items-start">
+            <div class="col-lg-7">
+              <p> I am a Computing Science student specialising in Machine Learning and Artificial Intelligence, with a strong interest in cybersecurity and trustworthy AI. Over the past few years, I’ve combined academic work with industry internships and startup experience, building systems that are robust, explainable, and aligned with real user needs. </p>
+              <p> Having co-founded several tech startups and contributed to open-source projects, I’ve developed strong leadership, problem-solving, and project management skills. I enjoy working at the intersection of research and engineering, turning ideas into usable, maintainable products. </p>
+            </div>
+            <div class="col-lg-5">
+              <div class="card shadow-sm h-100">
+                <div class="card-body">
+                  <h3 class="h5 mb-3">Quick facts</h3>
+                  <ul class="list-group list-group-flush mb-3">
+                    <li class="list-group-item d-flex justify-content-between align-items-center"> Location <span class="fw-semibold">Dublin 16, Ireland</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center"> Degree <span class="fw-semibold text-end">BSc (Hons) in Computing <br>
+                        <span class="small text-muted">with ML &amp; AI, TU Dublin</span>
+                      </span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center"> GPA <span class="fw-semibold">3.7</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center"> Experience <span class="fw-semibold text-end"> Startups, Red Hat Trusted AI, <br>EY Cybersecurity, Teaching </span>
+                    </li>
+                  </ul>
+                  <div class="d-flex flex-wrap gap-2">
+                    <span class="badge badge-nature">Machine Learning</span>
+                    <span class="badge badge-nature">Cybersecurity</span>
+                    <span class="badge badge-nature">Trustworthy AI</span>
+                    <span class="badge badge-nature">Startups &amp; Leadership</span>
+                    <span class="badge badge-nature">Teaching &amp; Mentoring</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- EDUCATION -->
+      <section id="education" class="section-padding">
+        <div class="container">
+          <div class="row mb-4">
+            <div class="col text-center">
+              <h2 class="section-title">Education</h2>
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div class="col-lg-8 mx-auto text-center">
+              <h3 class="h5 fw-semibold">TU Dublin BSc (Hons) in Computing with ML &amp; AI</h3>
+              <p class="mb-1">September 2022 to August 2026 | 4-year honours degree</p>
+              <p class="text-muted mb-0"> Strong focus on software engineering, data analysis and applied machine learning. </p>
+            </div>
+          </div>
+          <div class="education-tabs-shell">
+            <ul class="nav nav-tabs year-tabs" id="educationTabs" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="year1-tab" data-bs-toggle="tab" data-bs-target="#year1" type="button" role="tab" aria-controls="year1" aria-selected="false"> Year 1 </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="year2-tab" data-bs-toggle="tab" data-bs-target="#year2" type="button" role="tab" aria-controls="year2" aria-selected="false"> Year 2 </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="year3-tab" data-bs-toggle="tab" data-bs-target="#year3" type="button" role="tab" aria-controls="year3" aria-selected="false"> Year 3 </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="year4-tab" data-bs-toggle="tab" data-bs-target="#year4" type="button" role="tab" aria-controls="year4" aria-selected="true"> Year 4 </button>
+              </li>
+            </ul>
+            <div class="tab-content education-tab-content" id="educationTabContent">
+              <!-- YEAR 1 -->
+              <div class="tab-pane fade" id="year1" role="tabpanel" aria-labelledby="year1-tab" tabindex="0">
+                <div class="table-responsive">
+                  <table class="table table-striped table-hover align-middle mb-0">
+                    <thead>
+                      <tr>
+                        <th scope="col">Module</th>
+                        <th scope="col">Semester</th>
+                        <th scope="col">Type</th>
+                        <th scope="col">Grade</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <!-- Semester 1 -->
+                      <tr>
+                        <td>Critical Skills Development</td>
+                        <td>1</td>
+                        <td>Core</td>
+                        <td>B+</td>
+                      </tr>
+                      <tr>
+                        <td>Visual Design &amp; User Experience</td>
+                        <td>1</td>
+                        <td>Core</td>
+                        <td>B+</td>
+                      </tr>
+                      <tr>
+                        <td>Business &amp; Information Systems</td>
+                        <td>1</td>
+                        <td>Core</td>
+                        <td>C</td>
+                      </tr>
+                      <tr>
+                        <td>Discrete Mathematics 1</td>
+                        <td>1</td>
+                        <td>Core</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Computer Architecture</td>
+                        <td>1</td>
+                        <td>Core</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Software Development 1</td>
+                        <td>1</td>
+                        <td>Core</td>
+                        <td>B+</td>
+                      </tr>
+                      <tr>
+                        <td>Social Media Communications</td>
+                        <td>2</td>
+                        <td>Core</td>
+                        <td>B+</td>
+                      </tr>
+                      <tr>
+                        <td>Systems Analysis</td>
+                        <td>2</td>
+                        <td>Core</td>
+                        <td>B</td>
+                      </tr>
+                      <tr>
+                        <td>Database Fundamentals</td>
+                        <td>2</td>
+                        <td>Core</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Statistics</td>
+                        <td>2</td>
+                        <td>Core</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Operating Systems Fundamentals</td>
+                        <td>2</td>
+                        <td>Core</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Software Development 2</td>
+                        <td>2</td>
+                        <td>Core</td>
+                        <td>A</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="year2" role="tabpanel" aria-labelledby="year2-tab" tabindex="0">
+                <div class="table-responsive">
+                  <table class="table table-striped table-hover align-middle mb-0">
+                    <thead>
+                      <tr>
+                        <th scope="col">Module</th>
+                        <th scope="col">Semester</th>
+                        <th scope="col">Type</th>
+                        <th scope="col">Grade</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Advanced Database Technologies</td>
+                        <td>1</td>
+                        <td>Core</td>
+                        <td>B-</td>
+                      </tr>
+                      <tr>
+                        <td>Discrete Mathematics 2</td>
+                        <td>1</td>
+                        <td>Core</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Network Fundamentals</td>
+                        <td>1</td>
+                        <td>Core</td>
+                        <td>B+</td>
+                      </tr>
+                      <tr>
+                        <td>Software Quality Assurance and Testing</td>
+                        <td>1</td>
+                        <td>Core</td>
+                        <td>B</td>
+                      </tr>
+                      <tr>
+                        <td>Client-Side Web Development</td>
+                        <td>1</td>
+                        <td>Core</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Software Development 3</td>
+                        <td>1</td>
+                        <td>Elective</td>
+                        <td>B</td>
+                      </tr>
+                      <tr>
+                        <td>Data Administration and Analysis</td>
+                        <td>2</td>
+                        <td>Core</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Management Science</td>
+                        <td>2</td>
+                        <td>Core</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Routing &amp; Switching Essentials</td>
+                        <td>2</td>
+                        <td>Core</td>
+                        <td>B+</td>
+                      </tr>
+                      <tr>
+                        <td>Information Security</td>
+                        <td>2</td>
+                        <td>Core</td>
+                        <td>A</td>
+                      </tr>
+                      <tr>
+                        <td>Project</td>
+                        <td>2</td>
+                        <td>Core</td>
+                        <td>B+</td>
+                      </tr>
+                      <tr>
+                        <td>Software Development 4</td>
+                        <td>2</td>
+                        <td>Elective</td>
+                        <td>A</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="year3" role="tabpanel" aria-labelledby="year3-tab" tabindex="0">
+                <div class="table-responsive">
+                  <table class="table table-striped table-hover align-middle mb-0">
+                    <thead>
+                      <tr>
+                        <th scope="col">Module</th>
+                        <th scope="col">Semester</th>
+                        <th scope="col">Type</th>
+                        <th scope="col">Grade</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Cloud Services &amp; Distributed Computing</td>
+                        <td>1</td>
+                        <td>Core</td>
+                        <td>B+</td>
+                      </tr>
+                      <tr>
+                        <td>Data Analysis</td>
+                        <td>1</td>
+                        <td>Core</td>
+                        <td>B+</td>
+                      </tr>
+                      <tr>
+                        <td>Big Data Technologies</td>
+                        <td>1</td>
+                        <td>Core</td>
+                        <td>B-</td>
+                      </tr>
+                      <tr>
+                        <td>Operating Systems</td>
+                        <td>1</td>
+                        <td>Core</td>
+                        <td>B+</td>
+                      </tr>
+                      <tr>
+                        <td>Server-Side Web Development</td>
+                        <td>1</td>
+                        <td>Core</td>
+                        <td>B+</td>
+                      </tr>
+                      <tr>
+                        <td>Data Structures and Algorithms</td>
+                        <td>1</td>
+                        <td>Elective</td>
+                        <td>A</td>
+                      </tr>
+                      <!-- Semester 2 -->
+                      <tr>
+                        <td>Work Placement</td>
+                        <td>2</td>
+                        <td>Core</td>
+                        <td>B+</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="tab-pane fade show active" id="year4" role="tabpanel" aria-labelledby="year4-tab" tabindex="0">
+                <div class="table-responsive">
+                  <table class="table table-striped table-hover align-middle mb-0">
+                    <thead>
+                      <tr>
+                        <th scope="col">Module</th>
+                        <th scope="col">Semester</th>
+                        <th scope="col">Type</th>
+                        <th scope="col">Grade</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Applied Machine Learning</td>
+                        <td>1</td>
+                        <td>Core</td>
+                        <td>In progress</td>
+                      </tr>
+                      <tr>
+                        <td>Data Analysis &amp; Visualisation</td>
+                        <td>1</td>
+                        <td>Core</td>
+                        <td>In progress</td>
+                      </tr>
+                      <tr>
+                        <td>Interactive Design &amp; Visualisation</td>
+                        <td>1</td>
+                        <td>Core</td>
+                        <td>In progress</td>
+                      </tr>
+                      <tr>
+                        <td>Computational Linguistics</td>
+                        <td>1</td>
+                        <td>Core</td>
+                        <td>In progress</td>
+                      </tr>
+                      <tr>
+                        <td>Thesis</td>
+                        <td>1</td>
+                        <td>Core</td>
+                        <td>In progress</td>
+                      </tr>
+                      <tr>
+                        <td>DevOps</td>
+                        <td>1</td>
+                        <td>Elective</td>
+                        <td>In progress</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="projects" class="section-padding bg-body-secondary">
+        <div class="container">
+          <div class="row mb-4">
+            <div class="col text-center">
+              <h2 class="section-title">Projects</h2>
+              <p class="section-subtitle">Projects I completed in recent years across disciplines.</p>
+            </div>
+          </div>
+          <div class="row align-items-center mb-4">
+            <div class="col-md-6 mx-auto">
+              <div class="d-flex justify-content-center align-items-center flex-wrap gap-2 project-filter-bar">
+                <label class="form-label mb-0">Filter by area</label>
+                <div class="dropdown">
+                  <button class="btn btn-sm btn-project-filter dropdown-toggle" type="button" id="projectFilterDropdown" data-bs-toggle="dropdown" aria-expanded="false"> Show all </button>
+                  <ul class="dropdown-menu" aria-labelledby="projectFilterDropdown">
+                    <li>
+                      <button class="dropdown-item active" type="button" data-filter="all">Show all</button>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li>
+                      <button class="dropdown-item" type="button" data-filter="ml">Machine Learning</button>
+                    </li>
+                    <li>
+                      <button class="dropdown-item" type="button" data-filter="security">Security</button>
+                    </li>
+                    <li>
+                      <button class="dropdown-item" type="button" data-filter="teaching">Teaching</button>
+                    </li>
+                    <li>
+                      <button class="dropdown-item" type="button" data-filter="entrepreneurship">Entrepreneurship</button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row row-cols-1 row-cols-md-3 g-4" id="projectCards">
+            <!-- Project Card 1 -->
+            <div class="col" data-category="ml">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body d-flex flex-column project-card">
+                  <h3 class="card-title h5">TrustyAI NLP Metrics Rewrite</h3>
+                  <p class="card-text flex-grow-1"> Python rewrite and API exposure of core NLP evaluation metrics (BLEU, ROUGE, Levenshtein) for Red Hat’s Trusted AI service. </p>
+                  <span class="badge badge-project-ml mb-2">Machine Learning</span>
+                  <button class="btn btn-sm mt-auto project-btn" data-bs-toggle="modal" data-bs-target="#project1Modal"> View details </button>
+                </div>
+              </div>
+            </div>
+            <div class="col" data-category="security">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body d-flex flex-column project-card">
+                  <h3 class="card-title h5">Drift &amp; Anomaly Detection Service</h3>
+                  <p class="card-text flex-grow-1"> Design and implementation of drift detection metrics and anomaly monitoring for ML systems. </p>
+                  <span class="badge badge-project-security mb-2">Security / Reliability</span>
+                  <button class="btn btn-sm mt-auto project-btn" data-bs-toggle="modal" data-bs-target="#project2Modal"> View details </button>
+                </div>
+              </div>
+            </div>
+            <div class="col" data-category="entrepreneurship">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body d-flex flex-column project-card">
+                  <h3 class="card-title h5">Frensei Research Intelligence Platform</h3>
+                  <p class="card-text flex-grow-1"> Co-founded and led the technical development of a research intelligence platform recognised by programmes such as LaunchBox and New Frontiers. </p>
+                  <span class="badge badge-project-entre mb-2">Entrepreneurship</span>
+                  <button class="btn btn-sm mt-auto project-btn" data-bs-toggle="modal" data-bs-target="#project3Modal"> View details </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="experience" class="section-padding bg-body-secondary">
+        <div class="container">
+          <div class="row mb-4">
+            <div class="col text-center">
+              <h2 class="section-title">Experience</h2>
+              <p class="section-subtitle"> Roles across startups, industry and education, with a focus on trustworthy AI and applied computing. </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <div class="accordion" id="experienceAccordion">
+                <!-- Frensei -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="frenseiHeading">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#frenseiCollapse" aria-expanded="true" aria-controls="frenseiCollapse">
+                      <div class="d-flex flex-column flex-md-row w-100 justify-content-between align-items-start">
+                        <span>
+                          <strong>CTO &amp; Co-Founder</strong> &middot; Frensei / PhD Peer </span>
+                        <span class="small text-muted mt-1 mt-md-0"> Sept 2021 – Sept 2025 &middot; 4 years </span>
+                      </div>
+                    </button>
+                  </h2>
+                  <div id="frenseiCollapse" class="accordion-collapse collapse show" aria-labelledby="frenseiHeading" data-bs-parent="#experienceAccordion">
+                    <div class="accordion-body">
+                      <p class="mb-2"> Spearheaded the development of Frensei, a research intelligence startup recognised with multiple national awards and international acclaim, including LaunchBox, New Frontiers, ISEF and others. </p>
+                      <ul class="mb-3">
+                        <li>Led end-to-end design and development of the product suite.</li>
+                        <li>Secured a rapidly expanding global client base, including partnerships with universities in Canada, India, Ireland and the UK.</li>
+                        <li>Raised $50k+ in funding and negotiated over $500k in signed pilots in the pipeline.</li>
+                      </ul>
+                      <h6 class="small text-uppercase text-muted mb-1">Key skills &amp; technologies</h6>
+                      <div class="d-flex flex-wrap experience-skills">
+                        <span class="badge-skill">Enterprise Architecture</span>
+                        <span class="badge-skill">Containers</span>
+                        <span class="badge-skill">API Development</span>
+                        <span class="badge-skill">Hosting</span>
+                        <span class="badge-skill">Dependency Injection</span>
+                        <span class="badge-skill">API Testing</span>
+                        <span class="badge-skill">Golang</span>
+                        <span class="badge-skill">Bash</span>
+                        <span class="badge-skill">Flutter</span>
+                        <span class="badge-skill">Google Cloud</span>
+                        <span class="badge-skill">Google Firebase</span>
+                        <span class="badge-skill">JavaScript</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="redhatHeading">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#redhatCollapse" aria-expanded="false" aria-controls="redhatCollapse">
+                      <div class="d-flex flex-column flex-md-row w-100 justify-content-between align-items-start">
+                        <span>
+                          <strong>AI &amp; ML Engineer – Trusted AI</strong> &middot; Red Hat </span>
+                        <span class="small text-muted mt-1 mt-md-0"> Jan 2025 – Aug 2025 &middot; Internship · 9 months </span>
+                      </div>
+                    </button>
+                  </h2>
+                  <div id="redhatCollapse" class="accordion-collapse collapse" aria-labelledby="redhatHeading" data-bs-parent="#experienceAccordion">
+                    <div class="accordion-body">
+                      <p class="mb-2"> Contributing to Red Hat’s Trusted AI team to advance the explainability and safety of machine learning models in enterprise and OpenShift environments. </p>
+                      <ul class="mb-3">
+                        <li> Spearheaded the Python rewrite and API exposure of core NLP evaluation metrics (BLEU, ROUGE, Levenshtein), enabling their integration into the TrustyAI service for the first time. </li>
+                        <li> Key member of the testing &amp; QA effort, architecting robust test infrastructure with dependency injection and comprehensive validation for all service endpoints. </li>
+                        <li> Redesigned and implemented the mathematical foundations and API layer for drift detection metrics, including a full rewrite of Jensen–Shannon divergence in Python. </li>
+                        <li> Led high-impact outreach during Red Hat’s TY Week, delivering robotics and Python workshops and supporting event design. </li>
+                      </ul>
+                      <h6 class="small text-uppercase text-muted mb-1">Key skills &amp; technologies</h6>
+                      <div class="d-flex flex-wrap experience-skills">
+                        <span class="badge-skill">Python</span>
+                        <span class="badge-skill">FastAPI</span>
+                        <span class="badge-skill">NumPy</span>
+                        <span class="badge-skill">SciPy</span>
+                        <span class="badge-skill">OpenShift AI</span>
+                        <span class="badge-skill">Docker</span>
+                        <span class="badge-skill">Podman</span>
+                        <span class="badge-skill">GitHub Actions</span>
+                        <span class="badge-skill">API Design &amp; Testing</span>
+                        <span class="badge-skill">NLP Metrics</span>
+                        <span class="badge-skill">LLM Safety</span>
+                        <span class="badge-skill">Metric Porting</span>
+                        <span class="badge-skill">Open Source Contribution</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="teachingHeading">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#teachingCollapse" aria-expanded="false" aria-controls="teachingCollapse">
+                      <div class="d-flex flex-column flex-md-row w-100 justify-content-between align-items-start">
+                        <span>
+                          <strong>Applied Maths &amp; Computer Science Teacher</strong> &middot; Educating Eire </span>
+                        <span class="small text-muted mt-1 mt-md-0"> May 2023 – June 2024 &middot; 1 year </span>
+                      </div>
+                    </button>
+                  </h2>
+                  <div id="teachingCollapse" class="accordion-collapse collapse" aria-labelledby="teachingHeading" data-bs-parent="#experienceAccordion">
+                    <div class="accordion-body">
+                      <p class="mb-2"> Taught senior cycle students in Applied Maths and Computer Science, building on several years of freelance tutoring across secondary, undergraduate and professional levels (2,000+ hours). </p>
+                      <ul class="mb-3">
+                        <li>Designed and delivered curriculum-aligned lessons in Applied Maths and Computer Science.</li>
+                        <li>Provided one-to-one and small-group tutoring tailored to individual learning goals.</li>
+                        <li>Developed exam-focused resources and practice materials to support grade improvement.</li>
+                      </ul>
+                      <h6 class="small text-uppercase text-muted mb-1">Key skills &amp; focus areas</h6>
+                      <div class="d-flex flex-wrap experience-skills">
+                        <span class="badge-skill">Applied Maths</span>
+                        <span class="badge-skill">Computer Science</span>
+                        <span class="badge-skill">Curriculum Design</span>
+                        <span class="badge-skill">Exam Preparation</span>
+                        <span class="badge-skill">One-to-one Tutoring</span>
+                        <span class="badge-skill">Communication</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="eyHeading">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#eyCollapse" aria-expanded="false" aria-controls="eyCollapse">
+                      <div class="d-flex flex-column flex-md-row w-100 justify-content-between align-items-start">
+                        <span>
+                          <strong>Cybersecurity Consulting Intern</strong> &middot; Ernst &amp; Young </span>
+                        <span class="small text-muted mt-1 mt-md-0"> May 2023 – Aug 2023 &middot; 3 months </span>
+                      </div>
+                    </button>
+                  </h2>
+                  <div id="eyCollapse" class="accordion-collapse collapse" aria-labelledby="eyHeading" data-bs-parent="#experienceAccordion">
+                    <div class="accordion-body">
+                      <p class="mb-2"> Gained practical experience in penetration testing, cyber campaign management and client engagement, while contributing to innovation initiatives such as the EY Sustainability Challenge and Open Science AI/ML competitions. </p>
+                      <ul class="mb-3">
+                        <li>Supported vulnerability assessments and reporting for client environments.</li>
+                        <li>Contributed to passive and active target scanning in live engagements.</li>
+                        <li>Assisted in coordinating cyber campaigns and communicating results to stakeholders.</li>
+                      </ul>
+                      <h6 class="small text-uppercase text-muted mb-1">Key skills &amp; methodologies</h6>
+                      <div class="d-flex flex-wrap experience-skills">
+                        <span class="badge-skill">Vulnerability Reports</span>
+                        <span class="badge-skill">Passive Target Scanning</span>
+                        <span class="badge-skill">Active Target Scanning</span>
+                        <span class="badge-skill">Penetration Testing</span>
+                        <span class="badge-skill">Cyber Campaign Management</span>
+                        <span class="badge-skill">Cybersecurity Standards &amp; Methodologies</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="snapstudyHeading">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#snapstudyCollapse" aria-expanded="false" aria-controls="snapstudyCollapse">
+                      <div class="d-flex flex-column flex-md-row w-100 justify-content-between align-items-start">
+                        <span>
+                          <strong>Co-Founder</strong> &middot; SnapStudy </span>
+                        <span class="small text-muted mt-1 mt-md-0"> 2019 &middot; 1 year </span>
+                      </div>
+                    </button>
+                  </h2>
+                  <div id="snapstudyCollapse" class="accordion-collapse collapse" aria-labelledby="snapstudyHeading" data-bs-parent="#experienceAccordion">
+                    <div class="accordion-body">
+                      <p class="mb-2"> Co-founded SnapStudy, an AI-powered EdTech mobile application launched on both the App Store and Google Play. Contributed to the platform’s growth prior to the company’s acquisition. </p>
+                      <ul class="mb-3">
+                        <li>Worked on product design and user experience for mobile learners.</li>
+                        <li>Collaborated on AI-driven features to support personalised study.</li>
+                        <li>Supported go-to-market, user onboarding and early growth activities.</li>
+                      </ul>
+                      <h6 class="small text-uppercase text-muted mb-1">Key skills &amp; focus areas</h6>
+                      <div class="d-flex flex-wrap experience-skills">
+                        <span class="badge-skill">EdTech</span>
+                        <span class="badge-skill">AI-powered Products</span>
+                        <span class="badge-skill">Mobile Applications</span>
+                        <span class="badge-skill">Product Design</span>
+                        <span class="badge-skill">Early-stage Start-ups</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SKILLS -->
+      <section id="skills" class="section-padding">
+        <div class="container">
+          <div class="row mb-4">
+            <div class="col text-center">
+              <h2 class="section-title">Skills</h2>
+              <p class="section-subtitle"> Technical depth in ML, systems and cloud platforms, complemented by strong communication and teaching skills. </p>
+            </div>
+          </div>
+          <!-- Tabs: Technical vs Soft skills -->
+          <ul class="nav nav-pills justify-content-center mb-3 nav-pill-switch" id="skillsTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="technical-tab" data-bs-toggle="tab" data-bs-target="#technicalSkills" type="button" role="tab" aria-controls="technicalSkills" aria-selected="true"> Technical skills </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="soft-tab" data-bs-toggle="tab" data-bs-target="#softSkills" type="button" role="tab" aria-controls="softSkills" aria-selected="false"> Soft skills </button>
+            </li>
+          </ul>
+          <div class="tab-content" id="skillsTabContent">
+            <!-- TECHNICAL SKILLS – modern cards -->
+            <div class="tab-pane fade show active" id="technicalSkills" role="tabpanel" aria-labelledby="technical-tab" tabindex="0">
+              <div class="row g-4">
+                <!-- Languages & Frameworks -->
+                <div class="col-md-6 col-xl-4">
+                  <div class="card shadow-sm h-100 skill-card">
+                    <div class="card-body">
+                      <div class="skill-card-icon">
+                        <i class="bi bi-code-slash"></i>
+                      </div>
+                      <h3 class="h6 mb-1">Languages &amp; Frameworks</h3>
+                      <p class="small text-muted mb-2">Daily tools for backend, scripting and analysis.</p>
+                      <div class="d-flex flex-wrap gap-1">
+                        <span class="skill-chip">Python</span>
+                        <span class="skill-chip">FastAPI</span>
+                        <span class="skill-chip">pytest</span>
+                        <span class="skill-chip">NumPy</span>
+                        <span class="skill-chip">SciPy</span>
+                        <span class="skill-chip">Pandas</span>
+                        <span class="skill-chip">Golang</span>
+                        <span class="skill-chip">Java</span>
+                        <span class="skill-chip">Bash</span>
+                        <span class="skill-chip">C++</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- AI/ML & Data Science -->
+                <div class="col-md-6 col-xl-4">
+                  <div class="card shadow-sm h-100 skill-card">
+                    <div class="card-body">
+                      <div class="skill-card-icon">
+                        <i class="bi bi-cpu"></i>
+                      </div>
+                      <h3 class="h6 mb-1">AI / ML &amp; Data Science</h3>
+                      <p class="small text-muted mb-2">Trustworthy models, metrics and analysis.</p>
+                      <div class="d-flex flex-wrap gap-1">
+                        <span class="skill-chip">NLP Evaluation</span>
+                        <span class="skill-chip">Drift Detection</span>
+                        <span class="skill-chip">Anomaly Detection</span>
+                        <span class="skill-chip">Jensen–Shannon Divergence</span>
+                        <span class="skill-chip">Model Testing</span>
+                        <span class="skill-chip">LLM Safety</span>
+                        <span class="skill-chip">Statistical Analysis</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Testing & QA -->
+                <div class="col-md-6 col-xl-4">
+                  <div class="card shadow-sm h-100 skill-card">
+                    <div class="card-body">
+                      <div class="skill-card-icon">
+                        <i class="bi bi-bug"></i>
+                      </div>
+                      <h3 class="h6 mb-1">Testing &amp; Quality Assurance</h3>
+                      <p class="small text-muted mb-2">Ensuring systems behave correctly at scale.</p>
+                      <div class="d-flex flex-wrap gap-1">
+                        <span class="skill-chip">Dependency Injection</span>
+                        <span class="skill-chip">Unit Testing</span>
+                        <span class="skill-chip">Integration Testing</span>
+                        <span class="skill-chip">CI/CD (GitHub Actions)</span>
+                        <span class="skill-chip">API Validation</span>
+                        <span class="skill-chip">Mocking</span>
+                        <span class="skill-chip">Test Architecture</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Systems & Security -->
+                <div class="col-md-6 col-xl-4">
+                  <div class="card shadow-sm h-100 skill-card">
+                    <div class="card-body">
+                      <div class="skill-card-icon">
+                        <i class="bi bi-shield-lock"></i>
+                      </div>
+                      <h3 class="h6 mb-1">Systems &amp; Security</h3>
+                      <p class="small text-muted mb-2">From OS to secure APIs and live campaigns.</p>
+                      <div class="d-flex flex-wrap gap-1">
+                        <span class="skill-chip">RHEL</span>
+                        <span class="skill-chip">OS-level Containerisation</span>
+                        <span class="skill-chip">Command Line</span>
+                        <span class="skill-chip">System Debugging</span>
+                        <span class="skill-chip">Secure API Design</span>
+                        <span class="skill-chip">Access Control</span>
+                        <span class="skill-chip">Penetration Testing</span>
+                        <span class="skill-chip">Cybersecurity Campaigns</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Software Engineering -->
+                <div class="col-md-6 col-xl-4">
+                  <div class="card shadow-sm h-100 skill-card">
+                    <div class="card-body">
+                      <div class="skill-card-icon">
+                        <i class="bi bi-diagram-3"></i>
+                      </div>
+                      <h3 class="h6 mb-1">Software Engineering</h3>
+                      <p class="small text-muted mb-2">Turning ideas into maintainable systems.</p>
+                      <div class="d-flex flex-wrap gap-1">
+                        <span class="skill-chip">API Design &amp; Exposure</span>
+                        <span class="skill-chip">Modular Architecture</span>
+                        <span class="skill-chip">Git Workflow</span>
+                        <span class="skill-chip">Open Source Contribution</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Cloud, DevOps & Platforms -->
+                <div class="col-md-6 col-xl-4">
+                  <div class="card shadow-sm h-100 skill-card">
+                    <div class="card-body">
+                      <div class="skill-card-icon">
+                        <i class="bi bi-cloud-arrow-up"></i>
+                      </div>
+                      <h3 class="h6 mb-1">Cloud, DevOps &amp; Platforms</h3>
+                      <p class="small text-muted mb-2">Deploying, scaling and operating ML systems.</p>
+                      <div class="d-flex flex-wrap gap-1">
+                        <span class="skill-chip">OpenShift AI</span>
+                        <span class="skill-chip">Kubernetes</span>
+                        <span class="skill-chip">Docker</span>
+                        <span class="skill-chip">Podman</span>
+                        <span class="skill-chip">Quay.io</span>
+                        <span class="skill-chip">GitHub/GitLab CI</span>
+                        <span class="skill-chip">MongoDB</span>
+                        <span class="skill-chip">OracleSQL</span>
+                        <span class="skill-chip">JSON-based Storage</span>
+                        <span class="skill-chip">GCP</span>
+                        <span class="skill-chip">Jira</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- SOFT SKILLS – cards -->
+            <div class="tab-pane fade" id="softSkills" role="tabpanel" aria-labelledby="soft-tab" tabindex="0">
+              <div class="row g-4">
+                <div class="col-lg-10 mx-auto">
+                  <div class="row g-3">
+                    <div class="col-sm-6 col-lg-4">
+                      <div class="card shadow-sm h-100 skill-card">
+                        <div class="card-body">
+                          <div class="skill-card-icon soft">
+                            <i class="bi bi-lightbulb"></i>
+                          </div>
+                          <h3 class="h6 mb-2">Problem solving</h3>
+                          <ul class="small mb-0">
+                            <li>Creative problem solving</li>
+                            <li>Continuous learning</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                      <div class="card shadow-sm h-100 skill-card">
+                        <div class="card-body">
+                          <div class="skill-card-icon soft">
+                            <i class="bi bi-people"></i>
+                          </div>
+                          <h3 class="h6 mb-2">Leadership &amp; mentoring</h3>
+                          <ul class="small mb-0">
+                            <li>Mentoring &amp; teaching</li>
+                            <li>Leadership &amp; team management</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                      <div class="card shadow-sm h-100 skill-card">
+                        <div class="card-body">
+                          <div class="skill-card-icon soft">
+                            <i class="bi bi-arrow-repeat"></i>
+                          </div>
+                          <h3 class="h6 mb-2">Resilience</h3>
+                          <ul class="small mb-0">
+                            <li>Adaptability</li>
+                            <li>Resilience &amp; determination</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                      <div class="card shadow-sm h-100 skill-card">
+                        <div class="card-body">
+                          <div class="skill-card-icon soft">
+                            <i class="bi bi-megaphone"></i>
+                          </div>
+                          <h3 class="h6 mb-2">Communication</h3>
+                          <ul class="small mb-0">
+                            <li>Clear communication &amp; pitching</li>
+                            <li>Enthusiasm</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ACHIEVEMENTS -->
+      <section id="achievements" class="section-padding">
+        <div class="container">
+          <div class="row mb-4">
+            <div class="col text-center">
+              <h2 class="section-title">Achievements</h2>
+              <p class="section-subtitle">Awards, programmes and recognitions linked to my work.</p>
+            </div>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <h3 class="h6 card-title">LaunchBox &amp; New Frontiers</h3>
+                  <p class="card-text"> Frensei selected for Trinity’s LaunchBox accelerator and Enterprise Ireland’s New Frontiers, recognising its innovation and impact in research intelligence. </p>
+                  <span class="badge text-bg-success">Startup Programme</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <h3 class="h6 card-title">Irish Student Entrepreneurship Forum (ISEF)</h3>
+                  <p class="card-text"> International recognition for research and innovation, contributing to the trajectory that led to Frensei and securing 5k prize. </p>
+                  <span class="badge text-bg-success">International Recognition</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <h3 class="h6 card-title">Nanodegrees in Deep Learning &amp; Enterprise Security</h3>
+                  <p class="card-text"> Completed a 6-month Deep Learning nanodegree and currently pursuing a 6-month Enterprise Security nanodegree. </p>
+                  <span class="badge text-bg-success">Continuous Learning</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- HOBBIES -->
+      <section id="hobbies" class="section-padding">
+        <div class="container">
+          <div class="row mb-4">
+            <div class="col text-center">
+              <h2 class="section-title">Hobbies</h2>
+              <p class="section-subtitle">Photography</p>
+            </div>
+          </div>
+          <div class="row g-4 align-items-start">
+            <div class="col-lg-5">
+              <div class="card shadow-sm border-0 h-100">
+                <div class="card-body">
+                  <h3 class="h6 mb-2">Featured shots</h3>
+                  <p class="small text-muted mb-3"> A selection of my favourite shots so far. </p>
+                  <div id="photoCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner rounded-3 overflow-hidden">
+                      <div class="carousel-item active">
+                        <img src="images/hobbies/c1.jpg" class="d-block w-100" alt="Featured photograph 1">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/hobbies/c2.jpg" class="d-block w-100" alt="Featured photograph 2">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/hobbies/c3.jpg" class="d-block w-100" alt="Featured photograph 3">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#photoCarousel" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#photoCarousel" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <div class="card shadow-sm border-0">
+                <div class="card-body">
+                  <h3 class="h6 mb-2">Gallery</h3>
+                  <p class="small text-muted mb-3"> Click any image to view it larger in a modal. </p>
+                  <div class="row g-3">
+                    <div class="col-6 col-md-4">
+                      <img src="images/hobbies/g1.jpg" class="img-fluid rounded-3 gallery-image" alt="Photography shot 1" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                    </div>
+                    <div class="col-6 col-md-4">
+                      <img src="images/hobbies/g2.jpg" class="img-fluid rounded-3 gallery-image" alt="Photography shot 2" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                    </div>
+                    <div class="col-6 col-md-4">
+                      <img src="images/hobbies/g3.jpg" class="img-fluid rounded-3 gallery-image" alt="Photography shot 3" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                    </div>
+                    <div class="col-6 col-md-4">
+                      <img src="images/hobbies/g4.jpg" class="img-fluid rounded-3 gallery-image" alt="Photography shot 4" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                    </div>
+                    <div class="col-6 col-md-4">
+                      <img src="images/hobbies/g5.jpg" class="img-fluid rounded-3 gallery-image" alt="Photography shot 5" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                    </div>
+                    <div class="col-6 col-md-4">
+                      <img src="images/hobbies/g6.jpg" class="img-fluid rounded-3 gallery-image" alt="Photography shot 6" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                    </div>
+                    <div class="col-12">
+                      <img src="images/hobbies/g7.jpg" class="img-fluid rounded-3 gallery-image" alt="Photography shot 7" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+              <div class="modal-content bg-dark">
+                <div class="modal-body p-0">
+                  <img id="galleryModalImage" src="" alt="Selected hobby image" class="img-fluid w-100">
+                </div>
+                <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-2" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- CONTACT -->
+      <section id="contact" class="section-padding">
+        <div class="container">
+          <div class="row mb-4">
+            <div class="col text-center">
+              <h2 class="section-title">Contact</h2>
+              <p class="section-subtitle"> Prefer socials but if you email, I’ll reply as soon as I can. </p>
+            </div>
+          </div>
+          <div class="row g-4 align-items-start">
+            <div class="col-lg-5">
+              <div class="card shadow-sm border-0 h-100">
+                <div class="card-body">
+                  <h3 class="h6 mb-3">Connect with me</h3>
+                  <p class="small text-muted"> The easiest way to reach me is through LinkedIn or GitHub. </p>
+                  <div class="d-grid gap-2 mb-3">
+                    <a href="https://linkedin.com/in/neri-carcasci" target="_blank" rel="noopener" class="btn btn-outline-secondary d-flex align-items-center justify-content-center">
+                      <i class="bi bi-linkedin me-2"></i>
+                      <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/NeriCarcasci" target="_blank" rel="noopener" class="btn btn-outline-secondary d-flex align-items-center justify-content-center">
+                      <i class="bi bi-github me-2"></i>
+                      <span>GitHub</span>
+                    </a>
+                  </div>
+                  <p class="small text-muted mb-0"> Based in Dublin, open to hybrid/remote roles in research, ML engineering and developer productivity. </p>
+                </div>
+              </div>
+            </div>
+            <!-- Email trigger + details -->
+            <div class="col-lg-7">
+              <div class="card shadow-sm border-0">
+                <div class="card-body">
+                  <h3 class="h6 mb-3">Email</h3>
+                  <p class="small text-muted"> Click the button below to start an email. A short form will help you populate the subject and message. </p>
+                  <div class="mb-3">
+                    <div class="d-flex align-items-center mb-1">
+                      <i class="bi bi-envelope me-2 text-primary"></i>
+                      <!-- Replace the email address below with your real one -->
+                      <span class="fw-semibold">nericarcasci@gmail.com</span>
+                    </div>
+                    <p class="small text-muted mb-0"> Your mail app will open with your message pre-filled, but you can edit it before sending it. </p>
+                  </div>
+                  <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#emailModal">
+                    <i class="bi bi-pencil-square me-2"></i> Start an email </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Email form modal -->
+          <div class="modal fade" id="emailModal" tabindex="-1" aria-labelledby="emailModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="emailModalLabel">Draft an email</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form id="contactForm" novalidate>
+                    <div class="mb-3">
+                      <label for="contactName" class="form-label">Your name</label>
+                      <input type="text" class="form-control" id="contactName" name="name" required>
+                      <div class="invalid-feedback">Please enter your name.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="contactEmail" class="form-label">Your email</label>
+                      <input type="email" class="form-control" id="contactEmail" name="email" required>
+                      <div class="invalid-feedback">Please enter a valid email address.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="contactSubject" class="form-label">Subject</label>
+                      <input type="text" class="form-control" id="contactSubject" name="subject" required value="Portfolio enquiry">
+                      <div class="invalid-feedback">Please add a subject.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="contactMessage" class="form-label">Message</label>
+                      <textarea class="form-control" id="contactMessage" name="message" rows="4" required></textarea>
+                      <div class="invalid-feedback">Please write a short message.</div>
+                    </div>
+                    <div class="d-flex justify-content-end gap-2">
+                      <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+                      <button type="submit" class="btn btn-primary">
+                        <i class="bi bi-send me-1"></i> Open in mail app </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 1200;">
+            <div id="contactToast" class="toast align-items-center text-white border-0" role="status" aria-live="polite" aria-atomic="true">
+              <div class="d-flex">
+                <div class="toast-body"> Opening your email application… </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- FOOTER -->
+    <footer class="py-4 bg-dark text-light mt-3">
+      <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <p class="mb-0 small">&copy; <span id="year"></span> Neri Carcasci. All rights reserved. </p>
+        <div class="d-flex align-items-center gap-3 small">
+          <a href="#hero" class="text-decoration-none text-light">
+            <i class="bi bi-chevron-up me-1"></i>Back to top </a>
+          <a href="implementation-notes.html" class="text-decoration-none text-light"> Implementation notes </a>
+        </div>
+      </div>
+    </footer>
+    <!-- PROJECT MODALS -->
+    <div class="modal fade" id="project1Modal" tabindex="-1" aria-labelledby="project1ModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="project1ModalLabel">TrustyAI NLP Metrics Rewrite</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p> Rewrote and exposed BLEU, ROUGE and Levenshtein metrics in Python, integrating them into Red Hat’s TrustyAI service. This work improved testability, performance and integration with downstream tools. </p>
+            <ul>
+              <li>Implemented metrics with a focus on correctness and alignment with existing Java behaviour.</li>
+              <li>Designed clear, documented APIs that are easy to consume in the wider TrustyAI ecosystem.</li>
+              <li>Collaborated with the testing team to validate correctness against reference implementations.</li>
+            </ul>
+            <p class="small text-muted mb-0"> Technologies: Python, FastAPI, NumPy, SciPy, testing frameworks, OpenShift AI. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="project2Modal" tabindex="-1" aria-labelledby="project2ModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="project2ModalLabel">Drift &amp; Anomaly Detection Service</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p> Redesigned the mathematical foundations and API layer for drift detection metrics, including a full Jensen–Shannon divergence rewrite in Python for use in real-time monitoring. </p>
+            <ul>
+              <li>Analysed existing implementations and proposed more robust, numerically stable alternatives.</li>
+              <li>Exposed metrics via REST APIs that integrate with the TrustyAI service.</li>
+              <li>Documented usage patterns and example workflows for data scientists and engineers.</li>
+            </ul>
+            <p class="small text-muted mb-0"> Technologies: Python, NumPy, SciPy, FastAPI, CI/CD, monitoring tools. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="project3Modal" tabindex="-1" aria-labelledby="project3ModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="project3ModalLabel">Frensei Research Intelligence Platform</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p> Ongoing work on a platform that helps researchers discover journals, grants and industry collaboration opportunities, built around a knowledge base and recommendation engine. </p>
+            <ul>
+              <li>Designed the system architecture for ingesting research data, grants and industry information.</li>
+              <li>Implemented backend services, APIs and data pipelines to support recommendation features.</li>
+              <li>Coordinated with co-founders, advisors and early users to refine the product direction.</li>
+            </ul>
+            <p class="small text-muted mb-0"> Technologies: Golang, containers, cloud platforms, APIs, data pipelines. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- QUICK CONTACT MODAL -->
+    <div class="modal fade" id="quickContactModal" tabindex="-1" aria-labelledby="quickContactModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="quickContactModalLabel">Quick contact info</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <ul class="list-group">
+              <li class="list-group-item d-flex align-items-center">
+                <i class="bi bi-envelope me-2"></i>
+                <span>nericarcasci@gmail.com</span>
+              </li>
+              <li class="list-group-item d-flex align-items-center">
+                <i class="bi bi-linkedin me-2"></i>
+                <a href="https://linkedin.com/in/neri-carcasci" target="_blank" rel="noopener" class="text-decoration-none"> linkedin.com/in/neri-carcasci </a>
+              </li>
+              <li class="list-group-item d-flex align-items-center">
+                <i class="bi bi-github me-2"></i>
+                <a href="https://github.com/NeriCarcasci" target="_blank" rel="noopener" class="text-decoration-none"> github.com/NeriCarcasci </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- GALLERY MODAL -->
+    <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-body p-0">
+            <img id="galleryModalImage" src="" alt="Selected hobby image" class="img-fluid rounded-top">
+          </div>
+          <div class="modal-footer justify-content-between">
+            <span class="small text-muted">Hobby / interest</span>
+            <button type="button" class="btn btn-outline-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- TOAST (CONTACT FORM FEEDBACK) -->
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 1080">
+      <div id="contactToast" class="toast align-items-center text-bg-success border-0" role="status" aria-live="polite" aria-atomic="true">
+        <div class="d-flex">
+          <div class="toast-body"> Thank you for getting in touch – your message has been received. </div>
+          <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" ></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
